@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightX - Unveiling the Unknown</title>
+    
+    <!-- Bootstrap & Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="style.css" class="href">
+  
+</head>
+<body>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+     
+        <button class="navbar-toggler" onclick="toggleMenu()">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="navbar-collapse" id="navbarNav">
+            <a class="nav-link text-dark" href="#home">Home</a>
+            <a class="nav-link text-dark" href="#contact">Contact Us</a>
+            <a class="nav-link text-dark" href="https://medium.com/@insightx.analyticss">Blogs</a>
+            <a class="nav-link text-dark" href="#services">Services</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Blurred Video Background -->
+    <header id="home">
+        <video autoplay loop muted>
+            <source src="assets/InsightX Web Bg.mp4" type="video/mp4">
+        </video>
+    
+        <div class="hero-content text-center">
+            <!-- Huge Logo -->
+            <img src="assets/1.png" alt="InsightX Logo" class="hero-logo">
+    
+            <h1>Your Data, Our Insights.</h1>
+            <h2>Unveiling the Unknown.</h2>
+        </div>
+    </header>
+    
+
+    <!-- Introduction -->
+    <section class="container py-5 text-center">
+        <h2>Welcome to InsightX</h2>
+        <p>InsightX is a cutting-edge data analysis platform that transforms raw data into actionable insights for businesses, professionals, and sports analysts. Our mission is to make advanced analytics accessible, helping users uncover hidden trends, optimize strategies, and drive smarter decisions. Whether you're analyzing customer behavior, financial trends, or sports performance, InsightX provides intuitive tools, automated reports, and secure data processing. Simply upload your data, let our system analyze it, and receive clear, customized insights to fuel your growth. Your Data. Our Insights. Your Success.</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">Get in Touch</h2>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone</label>
+                <input type="tel" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Schedule a Call</label>
+                <input type="datetime-local" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Upload CSV Data</label>
+                <input type="file" class="form-control" accept=".csv" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Describe Your Requirements</label>
+                <textarea class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-4">
+        <h4>Connect With Us</h4>
+        <p>Follow us on social media</p>
+        <div>
+            <a href="https://x.com/InsightX__" class="text-white mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.instagram.com/insightx_analytics/" class="text-white mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/insight-x-09aa8734b/" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p class="mt-3">&copy; 2025 InsightX. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        function toggleMenu() {
+            const navbarCollapse = document.getElementById("navbarNav");
+            const overlay = document.getElementById("overlay");
+
+            if (navbarCollapse.classList.contains("show")) {
+                navbarCollapse.classList.remove("show");
+                overlay.classList.remove("show-overlay");
+            } else {
+                navbarCollapse.classList.add("show");
+                overlay.classList.add("show-overlay");
+            }
+        }
+       
+    </script>
+
+</body>
+</html>
