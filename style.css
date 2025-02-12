@@ -111,7 +111,7 @@ header video {
     z-index: 2;
 }
 .hero-logo {
-width: 400px; 
+width: 300px; 
 height: auto;
 
 animation: fadeInDown 1s ease-in-out;
