@@ -111,7 +111,7 @@ header video {
     z-index: 2;
 }
 .hero-logo {
-width: 60%; 
+width: 500px; 
 height: auto;
 
 animation: fadeInDown 1s ease-in-out;
@@ -153,4 +153,46 @@ color: #0077B5;
 .fa-facebook:hover {
     color: #0077B5;
     
+    }
+
+    .pricing-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .pricing-option {
+        position: relative;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .pricing-description {
+        display: none;
+        position: relative;
+        background: white;
+        border: 1px solid #ddd;
+        color: black;
+        padding: 10px;
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+   
+    .pricing-option input {
+        display: none;
+    }
+    .pricing-option input:checked + span {
+        background-color: #007bff;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+    }
+    .pricing-option input:checked ~ .pricing-description {
+        display: block;
     }
